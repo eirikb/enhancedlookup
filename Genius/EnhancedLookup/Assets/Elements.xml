@@ -2,9 +2,21 @@
 
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
     <Module Name="Assets">
-        <File Path="Assets\genius\js\enhancedlookup.js" Url="genius/js/enhancedlookup.js" />
+        <File Type="GhostableInLibrary" Path="Assets\genius\js\enhancedlookup.js" Url="genius/js/enhancedlookup.js" />
+        <File Type="GhostableInLibrary" Path="Assets\genius\lib\select2\select2.css"
+              Url="genius/lib/select2/select2.css" />
+        <File Type="GhostableInLibrary" Path="Assets\genius\lib\select2\select2.min.js"
+              Url="genius/lib/select2/select2.min.js" />
+        <File Type="GhostableInLibrary" Path="Assets\genius\lib\select2\select2.png"
+              Url="genius/lib/select2/select2.png" />
+        <File Type="GhostableInLibrary" Path="Assets\genius\lib\select2\spinner.gif"
+              Url="genius/lib/select2/spinner.gif" />
     </Module>
 
-    <CustomAction Location="ScriptLink" Sequence="1100"
+    <CustomAction Location="ScriptLink" Sequence="1101"
+                  ScriptBlock="genius.loadScript('jquery',function(){genius.loadScript('select2', '~site/genius/lib/select2/select2.min.js');});" />
+    <CustomAction Location="ScriptLink" Sequence="1102"
+                  ScriptBlock="genius.loadStyle('~site/genius/lib/select2/select2.css');" />
+    <CustomAction Location="ScriptLink" Sequence="1103"
                   ScriptBlock="genius.loadScript('~site/genius/js/enhancedlookup.js');" />
 </Elements>

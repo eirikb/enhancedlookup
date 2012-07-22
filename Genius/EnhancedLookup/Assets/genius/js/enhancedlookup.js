@@ -1,6 +1,5 @@
-﻿genius.loadStyle('http://ivaynberg.github.com/select2/select2-2.1/select2.css');
-genius.loadScript('jquery', function() {
-    genius.loadScript('select2', 'http://ivaynberg.github.com/select2/select2-2.1/select2.js', function() {
+﻿genius.loadScript('jquery', function() {
+    genius.loadScript('select2', function() {
         $(function() {
 
             function initSingle($field) {

@@ -3,5 +3,9 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="Assets\" Type="ElementManifest" />
     <ProjectItemFile Source="genius\js\enhancedlookup.js" Target="Assets\genius\js\" Type="ElementFile" />
+    <ProjectItemFile Source="genius\lib\select2\select2.css" Target="Assets\genius\lib\select2\" Type="ElementFile" />
+    <ProjectItemFile Source="genius\lib\select2\select2.min.js" Target="Assets\genius\lib\select2\" Type="ElementFile" />
+    <ProjectItemFile Source="genius\lib\select2\select2.png" Target="Assets\genius\lib\select2\" Type="ElementFile" />
+    <ProjectItemFile Source="genius\lib\select2\spinner.gif" Target="Assets\genius\lib\select2\" Type="ElementFile" />
   </Files>
 </ProjectItem>

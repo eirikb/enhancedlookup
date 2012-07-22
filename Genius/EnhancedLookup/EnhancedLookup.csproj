@@ -67,6 +67,10 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Assets\Elements.xml" />
+    <Content Include="Assets\genius\lib\select2\select2.css" />
+    <Content Include="Assets\genius\lib\select2\select2.min.js" />
+    <Content Include="Assets\genius\lib\select2\select2.png" />
+    <Content Include="Assets\genius\lib\select2\spinner.gif" />
     <Content Include="Features\GeniusEnhancedLookup\GeniusEnhancedLookup.Template.xml">
       <DependentUpon>GeniusEnhancedLookup.feature</DependentUpon>
     </Content>
