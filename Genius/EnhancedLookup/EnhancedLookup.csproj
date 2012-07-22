@@ -50,10 +50,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="key.snk" />
-    <None Include="Layouts\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{d1ecb9df-099d-4325-b9a7-5c17a831ffc7}</SharePointProjectItemId>
+    <None Include="Assets\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{175853d7-6397-4c32-9f54-d8c650f97cd4}</SharePointProjectItemId>
     </None>
+    <None Include="Features\GeniusEnhancedLookup\GeniusEnhancedLookup.feature">
+      <FeatureId>{b3c03521-65bb-4373-a082-38d8248990b9}</FeatureId>
+    </None>
+    <None Include="key.snk" />
     <None Include="Package\Package.package">
       <PackageId>{b563a513-56aa-492f-9df5-501abc15a209}</PackageId>
     </None>
@@ -61,11 +64,13 @@
       <DependentUpon>Package.package</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Features\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Layouts\EnhancedLookup\enhancedlookup.js" />
+    <Content Include="Assets\Elements.xml" />
+    <Content Include="Features\GeniusEnhancedLookup\GeniusEnhancedLookup.Template.xml">
+      <DependentUpon>GeniusEnhancedLookup.feature</DependentUpon>
+    </Content>
+    <Content Include="Assets\genius\js\enhancedlookup.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

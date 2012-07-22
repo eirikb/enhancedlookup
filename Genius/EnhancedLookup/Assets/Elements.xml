@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Module Name="Assets">
+        <File Path="Assets\genius\js\enhancedlookup.js" Url="genius/js/enhancedlookup.js" />
+    </Module>
+
+    <CustomAction Location="ScriptLink" Sequence="1100"
+                  ScriptBlock="genius.loadScript('~site/genius/js/enhancedlookup.js');" />
+</Elements>
