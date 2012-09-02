@@ -7,8 +7,8 @@
     <ProjectGuid>{C24ECF01-729D-4487-BD15-7519CE3A47D1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Genius.SharePoint.EnhancedLookup</RootNamespace>
-    <AssemblyName>Genius.SharePoint.EnhancedLookup</AssemblyName>
+    <RootNamespace>Eirikb.SharePoint.EnhancedLookup</RootNamespace>
+    <AssemblyName>Eirikb.SharePoint.EnhancedLookup</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -53,7 +53,7 @@
     <None Include="Assets\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{175853d7-6397-4c32-9f54-d8c650f97cd4}</SharePointProjectItemId>
     </None>
-    <None Include="Features\GeniusEnhancedLookup\GeniusEnhancedLookup.feature">
+    <None Include="Features\EnhancedLookup\EnhancedLookup.feature">
       <FeatureId>{b3c03521-65bb-4373-a082-38d8248990b9}</FeatureId>
     </None>
     <None Include="key.snk" />
@@ -67,14 +67,14 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Assets\Elements.xml" />
-    <Content Include="Assets\genius\lib\select2\select2.css" />
-    <Content Include="Assets\genius\lib\select2\select2.min.js" />
-    <Content Include="Assets\genius\lib\select2\select2.png" />
-    <Content Include="Assets\genius\lib\select2\spinner.gif" />
-    <Content Include="Features\GeniusEnhancedLookup\GeniusEnhancedLookup.Template.xml">
-      <DependentUpon>GeniusEnhancedLookup.feature</DependentUpon>
+    <Content Include="Assets\eirikb\lib\select2\select2.css" />
+    <Content Include="Assets\eirikb\lib\select2\select2.min.js" />
+    <Content Include="Assets\eirikb\lib\select2\select2.png" />
+    <Content Include="Assets\eirikb\lib\select2\spinner.gif" />
+    <Content Include="Features\EnhancedLookup\EnhancedLookup.Template.xml">
+      <DependentUpon>EnhancedLookup.feature</DependentUpon>
     </Content>
-    <Content Include="Assets\genius\js\enhancedlookup.js" />
+    <Content Include="Assets\eirikb\js\enhancedlookup.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
