@@ -6,13 +6,11 @@
     }
 
     function initMutli($field) {
-        var $leftSelect, $rightSelect, $select, $addButton, $removeButton;
-
-        $leftSelect = $field.find('select:eq(0)');
-        $rightSelect = $field.find('select:eq(1)');
-        $addButton = $field.find('button:eq(0)');
-        $removeButton = $field.find('button:eq(1)');
-        $select = $('<select multiple>');
+        var $leftSelect = $field.find('select:eq(0)');
+        var $rightSelect = $field.find('select:eq(1)');
+        var $addButton = $field.find('button:eq(0)');
+        var $removeButton = $field.find('button:eq(1)');
+        var $select = $('<select multiple>');
 
         $field.children().hide();
         $field.append($select);
@@ -40,14 +38,13 @@
     }
 
     $('.ms-formtable .ms-formbody').each(function() {
-        var $field, html, match;
+        var $field = $(this);
+        var html = $field.html();
+        var match = html.match(/FieldType=\"SPFieldLookup.*\"/);
 
-        $field = $(this);
-        html = $field.html();
-        match = html.match(/FieldType=\"SPFieldLookup.*\"/);
         if (match) {
-            if (match[0].match(/Multi/)) initMutli($field);
-            else initSingle($field);
+            (match[0].match(/Multi/)) ? initMutli($field) : initSingle($field);
+            $('.select2-container').width('100%');
         }
     });
 });
