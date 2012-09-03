@@ -43,7 +43,8 @@
         var match = html.match(/FieldType=\"SPFieldLookup.*\"/);
 
         if (match) {
-            (match[0].match(/Multi/)) ? initMutli($field) : initSingle($field);
+            var isSingle = $field.find('span > select').size() >= 1;
+            isSingle ? initSingle($field) : initMutli($field);
             $('.select2-container').width('100%');
         }
     });
