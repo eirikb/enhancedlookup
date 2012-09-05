@@ -2,11 +2,11 @@
 
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
     <Module Name="Assets">
-        <File Type="Ghostable" Path="Assets\eirikb\js\enhancedlookup.js" Url="eirikb/js/enhancedlookup.js" />
-        <File Type="Ghostable" Path="Assets\eirikb\lib\select2\select2.css" Url="eirikb/lib/select2/select2.css" />
-        <File Type="Ghostable" Path="Assets\eirikb\lib\select2\select2.min.js" Url="eirikb/lib/select2/select2.min.js" />
-        <File Type="Ghostable" Path="Assets\eirikb\lib\select2\select2.png" Url="eirikb/lib/select2/select2.png" />
-        <File Type="Ghostable" Path="Assets\eirikb\lib\select2\spinner.gif" Url="eirikb/lib/select2/spinner.gif" />
+        <File Path="Assets\eirikb\js\enhancedlookup.js" Url="eirikb/js/enhancedlookup.js" />
+        <File Path="Assets\eirikb\lib\select2\select2.css" Url="eirikb/lib/select2/select2.css" />
+        <File Path="Assets\eirikb\lib\select2\select2.min.js" Url="eirikb/lib/select2/select2.min.js" />
+        <File Path="Assets\eirikb\lib\select2\select2.png" Url="eirikb/lib/select2/select2.png" />
+        <File Path="Assets\eirikb\lib\select2\spinner.gif" Url="eirikb/lib/select2/spinner.gif" />
     </Module>
 
     <CustomAction Location="ScriptLink" Sequence="1102" ScriptBlock="loadcss('/eirikb/lib/select2/select2.css');" />
