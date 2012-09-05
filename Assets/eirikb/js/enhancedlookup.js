@@ -20,11 +20,9 @@
         $select.select2().select2('val', $rightSelect.find('option').map(function() { return $(this).val(); }).toArray());
 
         $select.on('change', function() {
-            var val, removeVal;
-
-            val = $select.select2('val');
-            removeVal = $rightSelect.find('option').filter(function() {
-                return val.indexOf($(this).val()) < 0;
+            var val = $select.select2('val');
+            var removeVal = $rightSelect.find('option').filter(function() {
+                return $.inArray($(this).val(), val) < 0;
             }).map(function() {
                 return $(this).val();
             }).toArray();
