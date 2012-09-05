@@ -42,10 +42,10 @@
         var html = $field.html();
         var match = html.match(/FieldType=\"SPFieldLookup.*\"/);
 
-        if (match) {
-            var isSingle = $field.find('span > select').size() >= 1;
-            isSingle ? initSingle($field) : initMutli($field);
-            $('.select2-container').width('100%');
-        }
+        if (!match || $field.has(':input').size() === 0) return;
+
+        var isSingle = $field.find('span > select').size() >= 1;
+        isSingle ? initSingle($field) : initMutli($field);
+        $('.select2-container').width('100%');
     });
 });
