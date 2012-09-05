@@ -3,9 +3,5 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="Assets\" Type="ElementManifest" />
     <ProjectItemFile Source="eirikb\js\enhancedlookup.js" Target="Assets\eirikb\js\" Type="ElementFile" />
-    <ProjectItemFile Source="eirikb\lib\select2\select2.css" Target="Assets\eirikb\lib\select2\" Type="ElementFile" />
-    <ProjectItemFile Source="eirikb\lib\select2\select2.min.js" Target="Assets\eirikb\lib\select2\" Type="ElementFile" />
-    <ProjectItemFile Source="eirikb\lib\select2\select2.png" Target="Assets\eirikb\lib\select2\" Type="ElementFile" />
-    <ProjectItemFile Source="eirikb\lib\select2\spinner.gif" Target="Assets\eirikb\lib\select2\" Type="ElementFile" />
   </Files>
 </ProjectItem>
