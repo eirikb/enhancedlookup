@@ -62,10 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Elements.xml" />
-    <Content Include="Assets\eirikb\lib\select2\select2.css" />
-    <Content Include="Assets\eirikb\lib\select2\select2.min.js" />
-    <Content Include="Assets\eirikb\lib\select2\select2.png" />
-    <Content Include="Assets\eirikb\lib\select2\spinner.gif" />
     <Content Include="Features\EnhancedLookup\EnhancedLookup.Template.xml">
       <DependentUpon>EnhancedLookup.feature</DependentUpon>
     </Content>
