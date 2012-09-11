@@ -1,7 +1,36 @@
 ﻿$(function() {
 
+    function mslookuptypeintextboxToSelect($field) {
+        var $input = $field.find('input');
+        var choices = $input.attr('choices');
+        var val = $input.val();
+
+        if (!choices) return $();
+        choices = choices.split('|');
+        var $select = $('<select>');
+        var last = null;
+        for (var i = 0; i < choices.length; i++) {
+            if (i % 2 === 0) {
+                last = choices[i];
+            } else {
+                var $option = $('<option>').val(choices[i]).text(last);
+                $select.append($option);
+            }
+        }
+        $field.find('input,img').hide();
+        $field.append($select);
+        $select.val(val);
+        $select.change(function() {
+            $input.val($select.val());
+        });
+        return $select;
+    }
+
     function initSingle($field) {
         var $select = $field.find('select');
+        if ($select.size() === 0) {
+            $select = mslookuptypeintextboxToSelect($field);
+        }
         $select.select2();
     }
 
@@ -42,7 +71,7 @@
 
         if (!match || $field.has(':input').size() === 0) return;
 
-        var isSingle = $field.find('span > select').size() >= 1;
+        var isSingle = $field.find('button').size() === 0;
         isSingle ? initSingle($field) : initMutli($field);
         $('.select2-container').width('100%');
     });
