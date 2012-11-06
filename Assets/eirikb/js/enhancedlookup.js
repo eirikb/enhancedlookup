@@ -41,6 +41,8 @@
         var $removeButton = $field.find('button:eq(1)');
         var $select = $('<select multiple>');
 
+        $select.addClass('enhanced');
+
         $field.children().hide();
         $field.append($select);
 
